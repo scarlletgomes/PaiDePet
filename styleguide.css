@@ -1,0 +1,8 @@
+:root {
+    --defaultblack: rgba(0, 0, 0, 1);
+    --orange-500: rgba(253, 126, 20, 1);
+    --defaultwhite: rgba(255, 255, 255, 1);
+    --gray-600: rgba(108, 117, 125, 1);
+    --gray-100: rgba(248, 249, 250, 1);
+  }
+
