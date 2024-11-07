@@ -1,0 +1,529 @@
+.login-e-cadastro {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #ffffff;
+}
+
+.login-e-cadastro .hero {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    align-items: flex-start;
+    padding: 0px 72px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--gray-100);
+}
+
+.login-e-cadastro .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 40px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: #ffffff;
+    border-radius: 40px;
+    box-shadow: 0px 16px 12px #00000008;
+}
+
+.login-e-cadastro .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.login-e-cadastro .group {
+    position: relative;
+    width: 29.27px;
+    height: 24px;
+}
+
+.login-e-cadastro .text-wrapper {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--defaultblack);
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.login-e-cadastro .menu {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.login-e-cadastro .text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px 10px;
+    position: relative;
+    flex: 0 0 auto;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: var(--orange-500);
+}
+
+.login-e-cadastro .div {
+    position: relative;
+    width: fit-content;
+    margin-top: -2.00px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: var(--orange-500);
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.login-e-cadastro .div-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 4px 10px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.login-e-cadastro .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--defaultblack);
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.login-e-cadastro .input-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.login-e-cadastro .input {
+    display: flex;
+    width: 280px;
+    height: 40px;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 5px 9px 16px;
+    position: relative;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+}
+
+.login-e-cadastro .text-wrapper-3 {
+    position: relative;
+    flex: 1;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: #00000099;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.login-e-cadastro .icon-bg {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    margin-top: -3.00px;
+    margin-bottom: -3.00px;
+}
+
+.login-e-cadastro .icons {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.login-e-cadastro .shopping-cart {
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+.login-e-cadastro .vector {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 19px;
+    left: 7px;
+}
+
+.login-e-cadastro .img {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    top: 19px;
+    left: 18px;
+}
+
+.login-e-cadastro .overlap-group {
+    position: absolute;
+    width: 31px;
+    height: 24px;
+    top: -7px;
+    left: 0;
+}
+
+.login-e-cadastro .vector-2 {
+    position: absolute;
+    width: 24px;
+    height: 17px;
+    top: 7px;
+    left: 0;
+}
+
+.login-e-cadastro .frame {
+    display: flex;
+    width: 14px;
+    height: 14px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 17px;
+    background-color: var(--orange-500);
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: #ffffff;
+}
+
+.login-e-cadastro .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -7.50px;
+    margin-bottom: -5.50px;
+    margin-left: -7.50px;
+    margin-right: -5.50px;
+    font-family: "Inter-Regular", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.login-e-cadastro .form-text-icons {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 110px;
+    padding: 60px 72px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.login-e-cadastro .form {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 396px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    position: relative;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.login-e-cadastro .acesse-sua-conta {
+    position: relative;
+    width: fit-content;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.login-e-cadastro .inputs-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.login-e-cadastro .input-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.login-e-cadastro .label {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: var(--defaultblack);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.login-e-cadastro .content {
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+    padding: 9px 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--defaultwhite);
+    border-radius: 6px;
+}
+
+.login-e-cadastro .placeholder {
+    position: relative;
+    flex: 1;
+    margin-top: -1.00px;
+    font-family: "Poppins-Regular", Helvetica;
+    font-weight: 400;
+    color: var(--gray-600);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.login-e-cadastro .input-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.login-e-cadastro .input-3 {
+    display: flex;
+    flex-direction: column;
+    width: 462px;
+    height: 72px;
+    align-items: flex-start;
+    gap: 6px;
+    position: relative;
+}
+
+.login-e-cadastro .label-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins-Medium", Helvetica;
+    font-weight: 500;
+    color: var(--defaultblack);
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.login-e-cadastro .placeholder-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 9px 16px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: var(--defaultwhite);
+    border-radius: 6px;
+}
+
+.login-e-cadastro .button {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    width: 248px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 20px;
+    position: relative;
+    background-color: var(--orange-500);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.login-e-cadastro .text-wrapper-5 {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.50px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.login-e-cadastro .form-2 {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    position: relative;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.login-e-cadastro .text-wrapper-6 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: "Poppins-SemiBold", Helvetica;
+    font-weight: 600;
+    color: #000000;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.login-e-cadastro .inputs-button-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.login-e-cadastro .inputs {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.login-e-cadastro .input-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.login-e-cadastro .content-2 {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    padding: 9px 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--defaultwhite);
+    border-radius: 6px;
+}
+
+.login-e-cadastro .input-5 {
+    display: flex;
+    flex-direction: column;
+    width: 447px;
+    height: 70px;
+    align-items: flex-start;
+    gap: 6px;
+    position: relative;
+}
+
+.login-e-cadastro .footer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 72px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--gray-100);
+}
+
+.login-e-cadastro .vector-3 {
+    position: absolute;
+    width: 632px;
+    height: 174px;
+    top: 0;
+    left: 0;
+}
+
+.login-e-cadastro .icons-text {
+    display: flex;
+    width: 1296px;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 106px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.login-e-cadastro .logo-text-icons {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    flex: 0 0 auto;
+}
