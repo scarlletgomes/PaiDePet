@@ -25,7 +25,7 @@ function verificarLogin(req, res, next) {
     }
     else{
         console.log('usuário NÃO autorizado');
-        res.redirect('login-cadastro.html');
+        res.redirect('/login-cadastro.html');
     }
 }
 
