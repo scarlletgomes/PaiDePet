@@ -1,10 +1,10 @@
 .homepage {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    position: relative;
-    background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  position: relative;
+  background-color: #ffffff;
   }
   
   .homepage .hero {
@@ -27,7 +27,7 @@
     left: 225px;
   }
   
-  .homepage .header {
+.homepage .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -39,7 +39,7 @@
     background-color: #ffffff;
     border-radius: 40px;
     box-shadow: 0px 16px 12px #00000008;
-  }
+}
   
   .homepage .logo {
     display: inline-flex;
@@ -254,7 +254,7 @@
     width: 100%;
     flex-grow: 1;
   }
-  
+
   .homepage .frame-2 {
     display: inline-flex;
     flex-direction: column;
@@ -332,9 +332,9 @@
     gap: 10px;
     position: absolute;
     top: 69px;
-    left: 653px;
+    right: 0; /* Altera para a direita */
   }
-  
+
   .homepage .shapes-pattern {
     position: relative;
     width: 787px;
@@ -372,14 +372,7 @@
     object-fit: cover;
   }
   
-  .homepage .vecteezy-hamster {
-    position: absolute;
-    width: 163px;
-    height: 150px;
-    top: 346px;
-    left: 282px;
-    object-fit: cover;
-  }
+
   
   .homepage .shape-2 {
     position: absolute;
@@ -1129,4 +1122,18 @@
   gap: 20px;
   position: relative;
   flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+  .homepage .text-button {
+      gap: 20px; /* Ajusta o espaçamento em telas menores */
+      align-items: center; /* Centraliza o conteúdo em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage .text-button {
+      gap: 10px; /* Reduz ainda mais o espaçamento em telas muito pequenas */
+      flex-direction: row; /* Altera a direção do flex para linha em telas muito pequenas */
+  }
 }
