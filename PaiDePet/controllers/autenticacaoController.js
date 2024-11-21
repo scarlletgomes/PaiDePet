@@ -11,7 +11,7 @@ async function login(req, res){
     if(usuario !== null){
         req.session.autorizado = true;
         req.session.usuario = usuario;
-        res.redirect('/');
+        res.redirect('/endereco');
     }
     else{
         res.redirect('/login-cadastro?erro_login=1');
@@ -21,6 +21,7 @@ async function login(req, res){
 function verificarLogin(req, res, next) {
     if(req.session.autorizado){
         console.log('usuário autorizado');
+        res.redirect('/endereco');
         next();
     }
     else{

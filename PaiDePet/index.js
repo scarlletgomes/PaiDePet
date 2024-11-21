@@ -26,8 +26,10 @@ app.use(session({
 
 const usuarioRouter = require('./routers/usuarioRouter');
 const autenticacaoRouter = require('./routers/autenticacaoRouter');
+const enderecoRouter = require('./routers/enderecoRouter');
 app.use('/', usuarioRouter);
 app.use('/', autenticacaoRouter);
+app.use('/', enderecoRouter);
 
 db.sync();
 
