@@ -9,6 +9,9 @@ const app = express();
 app.get('/', (req, res) => {
     res.render('index.html');
 });
+app.post('/enderecoCadastrado', (res,req)=>{
+    res.render('enderecoCadastrado.html', {Endereco})
+})
 
 app.engine('html', mustacheExpress());
 app.set('view engine', 'html');
