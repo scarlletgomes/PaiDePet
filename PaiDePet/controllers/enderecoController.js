@@ -2,7 +2,12 @@ const Endereco = require('../models/endereco');
 
 function enderecoCadastroView(req, res){
     let erro_form = req.query.erro_form;
-    res.render('endereco.html', {erro_form});
+    let nome = req.query.nome;
+    let cep = req.query.cep;
+    let endereco = req.query.endereco;
+    let numero = req.query.numero;
+    let complemento = req.query.complemento;
+    res.render('endereco.html', {erro_form, nome, cep, endereco, numero, complemento});
 }
 
 function postEndereco(req, res){
@@ -30,10 +35,12 @@ function postEndereco(req, res){
     if(dados.complemento.length == 0){
         erro_form = true;
     }
-
+    if(erro_form){
+        res.redirect(`/?erro_form=1&nome=${dados.nome}&cep=${dados.cep}&endereco=${dados.endereco}&numero=${dados.numero}&complemento=${dados.complemento}`);  
+    }
     else{
         Endereco.create(dados).then(()=>{
-            res.redirect('/endereco');
+            res.redirect('/enderecoCadastrado.html');
         }).catch((err)=>{
             console.log(err);
             res.redirect(`/endereco?erro_form=1`);
@@ -42,7 +49,16 @@ function postEndereco(req, res){
     
 }
 
+function getEnderecoView(req,res){
+    console.log("AAAAAAAA")
+    Endereco.findAll().then((enderecos)=>{
+        console.log("AAAAAAAA")
+        res.render('enderecoCadastrado.html', {enderecos});
+    })
+}
+
 module.exports = {
     enderecoCadastroView,
-    postEndereco
+    postEndereco,
+    getEnderecoView
 }

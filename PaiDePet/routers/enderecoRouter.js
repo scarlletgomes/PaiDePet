@@ -5,5 +5,6 @@ const app = express();
 
 router.get('/endereco', enderecoController.enderecoCadastroView);
 router.post('/endereco', enderecoController.postEndereco);
+router.get('/enderecoCadastrado', enderecoController.getEnderecoView);
 
 module.exports = router;
