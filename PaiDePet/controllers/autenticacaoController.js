@@ -14,7 +14,9 @@ async function login(req, res){
         res.redirect('/endereco');
     }
     else{
-        res.redirect('/login-cadastro?erro_login=1');
+        let erro_autenticacao = true;
+        res.render('login-cadastro.html', {erro_autenticacao});
+
     }
 }
 

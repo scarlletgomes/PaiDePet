@@ -8,9 +8,11 @@ function enderecoCadastroView(req, res){
 function postEndereco(req, res){
     let dados = {
         nome: req.body.nome,
+        id_usuario: req.session.id,
         cep: req.body.cep,
         endereco: req.body.endereco,
         numero: req.body.numero,
+        inidicador_ativo: 1,
         complemento: req.body.complemento
     };
 
@@ -42,6 +44,22 @@ function postEndereco(req, res){
     
 }
 
+<<<<<<< Updated upstream
+=======
+function getEnderecoView(req,res){
+    Endereco.findAll({
+        where: {
+            id_usuario: req.session.usuario.id,
+            inidicador_ativo: 1
+        }
+    }).then((enderecos)=>{
+        res.render('enderecoCadastrado.html', {enderecos});
+    }).catch((erro_form)=>{
+        res.render('login-cadastro.html', {erro_form});
+    });
+}
+
+>>>>>>> Stashed changes
 module.exports = {
     enderecoCadastroView,
     postEndereco

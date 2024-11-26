@@ -7,6 +7,10 @@ const Endereco = db.define('endereco', {
         autoIncrement: true,
         allowNull: false,
         primaryKey: true
+    },   
+    id_usuario: {
+        type: Sequelize.INTEGER,
+        allowNull: false
     },
     nome: {
         type: Sequelize.STRING,
@@ -22,6 +26,10 @@ const Endereco = db.define('endereco', {
     },
     numero: {
         type: Sequelize.NUMBER,
+        allowNull: false
+    },
+    indicador_ativo: {
+        type: Sequelize.INTEGER,
         allowNull: false
     },
     complemento: {

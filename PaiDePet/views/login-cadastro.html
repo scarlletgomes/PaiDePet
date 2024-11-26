@@ -40,6 +40,11 @@
                     </div>
                 </div>
             </div>
+            {{#erro_autenticacao}}
+                    <div class="alert alert-danger">
+                      Erro ao autenticar usuário!
+                    </div>
+                    {{/erro_autenticacao}}
             <form action="/login" method="POST">
             <div class="form-text-icons">
                 <div class="form">
