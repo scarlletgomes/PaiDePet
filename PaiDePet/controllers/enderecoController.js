@@ -50,9 +50,7 @@ function postEndereco(req, res){
 }
 
 function getEnderecoView(req,res){
-    console.log("AAAAAAAA")
     Endereco.findAll().then((enderecos)=>{
-        console.log("AAAAAAAA")
         res.render('enderecoCadastrado.html', {enderecos});
     })
 }

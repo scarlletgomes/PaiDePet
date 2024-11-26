@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     res.render('index.html');
 });
 app.post('/enderecoCadastrado', (res,req)=>{
-    res.render('enderecoCadastrado.html', {Endereco})
+    res.render('enderecoCadastrado', {Endereco})
 })
 
 app.engine('html', mustacheExpress());
