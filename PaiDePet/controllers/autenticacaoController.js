@@ -47,7 +47,7 @@ function verificarLogin(req, res, next) {
 
 function sair(req, res){
     req.session.destroy();
-    res.redirect('/login-cadastro.html');
+    res.redirect('/');
 }
 
 module.exports = {
