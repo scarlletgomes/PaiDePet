@@ -19,7 +19,13 @@
                         <a href="/"><div class="div-wrapper" ><div class="text-wrapper-2">Home</div></div></a>
                         <div class="div-wrapper">
                             <div class="div-wrapper">
-                                <a href="/login-cadastro"><div class="text"><div class="div">Entre ou Cadastre-se</div></div></a>
+                                <a href="/enderecoCadastrado"><div class="text"><div class="div">Endereços</div></div></a>
+                            </div>
+                            <div class="div-wrapper">
+                                <a href="/endereco"><div class="div-wrapper" ><div class="text-wrapper-2">Criar novo Endereço</div></div></a>
+                            </div>
+                            div class="div-wrapper">
+                                <a href="/sair"><div class="div-wrapper" ><div class="text-wrapper-2">Sair</div></div></a>
                             </div>
                         </div>
                     </div>
@@ -43,30 +49,31 @@
             </div>
             
             {{#enderecos}}
-            <form action="/enderecoCadastradro" method="GET">
-            <div class="form-text-icons">
-              <div class="form-2">
-                <div class="inputs-button-2">
-                  <div class="acesse-sua-conta">{{nome}}</div>
-                  <div class="inputs-button">
+<form action="/enderecoCadastrado" method="GET">
+    <div class="form-text-icons">
+        <div class="form-2">
+            <div class="inputs-button-2">
+                <div class="acesse-sua-conta">{{nome}}</div>
+                <div class="inputs-button">
                     <div class="input-4" style="display: flex; flex-direction: column; gap: 8px;">
-                      <div class="label">CEP: {{cep}}</div>
-                      <div class="label">Endereço: {{endereco}}</div>
-                      <div class="label">Número: {{numero}}</div>
-                      <div class="label">Complemento: {{complemento}}</div>
+                        <div class="label">CEP: {{cep}}</div>
+                        <div class="label">Endereço: {{endereco}}</div>
+                        <div class="label">Número: {{numero}}</div>
+                        <div class="label">Complemento: {{complemento}}</div>
+                        <div class="label">IdUsuario: {{usuarioId}}</div>
                     </div>
                     <div class="button-group" style="margin-top: 10px;">
-                      <button class="button"><div class="text-wrapper-5">Editar</div></button>
-                      <button class="button"><div class="text-wrapper-5">Excluir</div></button>
+                        <a href="/endereco/{{id}}">
+                            <button type="button" class="button"><div class="text-wrapper-5">Editar</div></button>
+                        </a>
+                        <button type="button" class="button"><div class="text-wrapper-5">Excluir</div></button>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          {{/enderecos}}
-          
-            </div>
-           
+        </div>
+    </div>
+</form>
+{{/enderecos}}
          
             <footer class="footer">
                 <img class="vector-3" src="/public/img/Patas.png" />

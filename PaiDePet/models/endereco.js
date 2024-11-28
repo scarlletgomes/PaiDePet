@@ -21,12 +21,20 @@ const Endereco = db.define('endereco', {
         allowNull: false,
     },
     numero: {
-        type: Sequelize.NUMBER,
+        type: Sequelize.INTEGER, 
         allowNull: false
     },
     complemento: {
         type: Sequelize.STRING,
+        allowNull: true, 
+    },
+    usuarioId: {
+        type: Sequelize.INTEGER,
         allowNull: false,
+        references: {
+            model: 'usuarios', 
+            key: 'id'
+        }
     }
 });
 
