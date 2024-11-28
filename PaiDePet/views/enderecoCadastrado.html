@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="globals.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="styleguide.css" />
+        <link rel="stylesheet" href="stylelogin.css" />
+    </head>
+    <body>
+        <div class="login-e-cadastro">
+            <div class="hero">
+                <div class="header">
+                    <div class="logo">
+                        <img class="group" src="/public/img/pata.png">
+                        <div class="text-wrapper">Pai de Pet</div>
+                    </div>
+                    <div class="menu">
+                        <a href="/"><div class="div-wrapper" ><div class="text-wrapper-2">Home</div></div></a>
+                        <div class="div-wrapper">
+                            <div class="div-wrapper">
+                                <a href="/enderecoCadastrado"><div class="text"><div class="div">Endereços</div></div></a>
+                            </div>
+                            <div class="div-wrapper">
+                                <a href="/endereco"><div class="div-wrapper" ><div class="text-wrapper-2">Criar novo Endereço</div></div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-icons">
+                        <div class="input">
+                            <div class="text-wrapper-3">Procurar produtos...</div>
+                            <img class="icon-bg" src="/public/img/search.png" />
+                        </div>
+                        <div class="icons">
+                            <div class="shopping-cart">
+                                <img class="vector" src="/pubic/img/carrinho.png" />
+                                <img class="img" src="/public/img/carrinho.png" />
+                                <div class="overlap-group">
+                                    <img class="vector-2" src="/public/img/carrinho.png" />
+                                    <div class="frame"><div class="text-wrapper-4">0</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            {{#enderecos}}
+<form action="/enderecoCadastrado" method="GET">
+    <div class="form-text-icons">
+        <div class="form-2">
+            <div class="inputs-button-2">
+                <div class="acesse-sua-conta">{{nome}}</div>
+                <div class="inputs-button">
+                    <div class="input-4" style="display: flex; flex-direction: column; gap: 8px;">
+                        <div class="label">CEP: {{cep}}</div>
+                        <div class="label">Endereço: {{endereco}}</div>
+                        <div class="label">Número: {{numero}}</div>
+                        <div class="label">Complemento: {{complemento}}</div>
+                        <div class="label">IdUsuario: {{usuarioId}}</div>
+                    </div>
+                    <div class="button-group" style="margin-top: 10px;">
+                        <a href="/endereco/{{id}}">
+                            <button type="button" class="button"><div class="text-wrapper-5">Editar</div></button>
+                        </a>
+                        <button type="button" class="button"><div class="text-wrapper-5">Excluir</div></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{{/enderecos}}
+         
+            <footer class="footer">
+                <img class="vector-3" src="/public/img/Patas.png" />
+                <div class="icons-text">
+                    <div class="logo-text-icons">
+                        <div class="logo">
+                            <img class="group" src="/public/img/pata.png" />
+                            <div class="text-wrapper">Pai de Pet</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
