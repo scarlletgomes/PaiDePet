@@ -58,30 +58,27 @@ function postEndereco(req, res) {
     }
 }
 
-// Função para editar um endereço
 function editarEndereco(req, res) {
     const usuarioId = req.session.usuarioId; 
-    const enderecoId = req.params.id;  // Pega o ID do endereço que será editado
+    const enderecoId = req.params.id;  
 
     if (!usuarioId) {
         return res.status(401).send("Usuário não autenticado");
     }
 
-    // Buscar o endereço no banco de dados usando o ID
     Endereco.findOne({ where: { id: enderecoId, usuarioId } })
         .then(endereco => {
             if (!endereco) {
                 return res.status(404).send("Endereço não encontrado");
             }
 
-            // Renderiza a página de edição com os dados do endereço
             res.render('endereco.html', {
                 nome: endereco.nome,
                 cep: endereco.cep,
                 endereco: endereco.endereco,
                 numero: endereco.numero,
                 complemento: endereco.complemento,
-                id: endereco.id  // Passa o ID do endereço para o formulário
+                id: endereco.id  
             });
         })
         .catch(err => {
@@ -89,6 +86,7 @@ function editarEndereco(req, res) {
             res.status(500).send("Erro ao buscar o endereço");
         });
 }
+
 
 function atualizarEndereco(req, res) {
     const usuarioId = req.session.usuarioId; 
@@ -125,10 +123,40 @@ function atualizarEndereco(req, res) {
         });
 }
 
+function excluirEndereco(req, res) {
+    const usuarioId = req.session.usuarioId;  
+    const enderecoId = req.params.id;         
+
+    if (!usuarioId) {
+        return res.status(401).send("Usuário não autenticado");
+    }
+
+    Endereco.findOne({ where: { id: enderecoId, usuarioId } })
+        .then(endereco => {
+            if (!endereco) {
+                return res.status(404).send("Endereço não encontrado");
+            }
+            endereco.destroy()
+                .then(() => {
+                    res.redirect('/enderecoCadastrado');  
+                })
+                .catch(err => {
+                    console.error('Erro ao excluir o endereço:', err);
+                    res.status(500).send("Erro ao excluir o endereço");
+                });
+        })
+        .catch(err => {
+            console.error('Erro ao buscar o endereço para exclusão:', err);
+            res.status(500).send("Erro ao buscar o endereço");
+        });
+}
+
+
 module.exports = {
     enderecoCadastroView,
     postEndereco,
     getEnderecoView,
     editarEndereco,  
-    atualizarEndereco  
+    atualizarEndereco,
+    excluirEndereco 
 };
